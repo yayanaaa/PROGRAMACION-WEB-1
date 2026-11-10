@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zambrano Robles Itzayana Cristina">
+    <title>Listas y formularios</title>
+</head>
+<body>
+    <div>
+        <h3>Listas no ordenadas</h3>
+        <ul>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pan</li>
+            <li>Jámon</li>
+            <li>Papel</li>
+        </ul>
+        <h3>Listas ordenadas</h3>
+        <ol type="I" reversed>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+            <li>Cuarto</li>
+            <li>Quinto</li>
+        </ol>
+          <ol type="I" start="10">
+            <li>Decimo</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+            <li>Cuarto</li>
+            <li>Quinto</li>
+        </ol>
+        <h3>Listas de definiciones</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado de hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hojas de estilo de cascada</dd>
+            <dt>JS</dt>
+            <dd>Java Script</dd>
+        </dl>
+        <h3>Listas anidadas</h3>
+        <p>Desarrollo WEB</p>
+        <ul>
+            <li>FRONTEND</li>
+                <ol type="i">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ol>
+            <li>BACKEND</li>
+                <ol type="a">
+                    <li>NodeJS</li>
+                    <li>MYSQL</li>
+                    <li>ArchLinux</li>
+                </ol>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>Formularios</h2>
+        <h3>Formuario de Inicio de Sesión</h3>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="get">
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <hr>
+    <h3>Formulario con campo de entrada de varias lineas</h3>
+        <form action="validar.js" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="opinion">Comentario:</label>
+            <textarea name="opinion" id="opinion" placeholder="Tu opinion es importante:" required rows="5"  cols="50"></textarea>
+            <br><br>
+            <button type="submit"> Enviar comentario</button>
+
+            <hr>
+
+            <h3>Formulario con una lista despegable de opciones</h3>
+            <form action="/opciones" method="post">
+                <label for="bebidas">Bebidas:</label>
+                <select name="bebidas" id="bebidas">
+                    <option value="" disabled selected>Selecciona una bebida</option>
+                    <option value="coca_cola">Coca-Cola</option>
+                    <option value="pepsi">Pepsi</option>
+                    <option value="boing">Boing</option>
+                    <option value="jarritos">Jarritos</option>
+
+                </select>
+                <br>
+                <label for="postres">Postres:</label>
+                <select name="postres" id="postres">
+                    <option value="" disabled selected>Selecciona un postre</option>
+                    <option value="pay_limon">Pay de limon</option>
+                    <option value="pay_fresa">Pay de fresa</option>
+                    <option value="flan">Flan</option>
+                    <option value="arroz_leche">Arroz con Leche</option>
+                </select>
+                <br>
+                <input type ="submit">
+                </form>
+            
+                <h3>Formulario con distintos campos de datos</h3>
+                <form action="datos.php" method="post">
+                    <fieldset>
+                        <legend>Nombre Completo</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br>
+                        <label for="ap_paterno">Ap. Paterno</label>
+                        <input type="text" id="ap_paterno" name="ap_paterno" required>
+                        <br>
+                        <label for="ap_materno">Ap. Materno</label>
+                        <input type="text" id="ap_materno" name="ap_materno" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros Datos</legend>
+                        <label for="fecha_nacimiento"> Fecha de Nacimiento</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        <br>
+                        <label for="edad">Edad</label>
+                        <input type="numbre" id="edad" name="edad" required min="18" max="90">
+                        <br>
+                        <label for="numero_cuenta">Numero de Cuenta</label>
+                        <input type="text" id="numero_cuenta" name="numero_cuenta" required pattern="[0-9]{9}">
+                        <br>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Direccion: </legend>
+                    <label for="Calle">Calle</label>
+                    <input type="text" name="Calle" id="Calle" required>
+                    <br>
+                    <label for="Colonia">Colonia</label>
+                    <input type="text" name="Colonia" id="Colonia" required ">
+                    <br>
+                    <label for="Manzana">Manzana</label>
+                    <input type="number" name="Manzana" id="Manzana" required pattern="[0-9]{2}">
+                    <br>
+                    <label for="Codigo_Postal">Codigo Postal</label>
+                    <input type="text" name="Codigo_Postal" id="Codigo_Postal" required>
+                    <br>
+                </fieldset>
+                <button type="submit">CARGAR</button>
+                </form>
+
+</body>
+</html>
