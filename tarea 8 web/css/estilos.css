@@ -1,0 +1,20 @@
+
+h2 {
+    color:rgb(170, 170, 216);
+}
+/*Estilos para un selector de una clase*/
+.color-h2 {
+    color: darkblue;
+}
+/*Estilos para un selector de un indentificador*/
+#color-h1{
+    color: violet;
+}
+
+.color-estilosinternos{
+    color: blue;
+}
+
+#bg-header{
+    background-color: darkolivegreen;
+}
