@@ -1,0 +1,88 @@
+html{
+    font-size: 10px;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    a:link{
+    color: rgb(109, 156, 226);
+    text-decoration: underline;
+}
+
+a:visited{
+    color: aquamarine;
+    text-decoration: line-through;
+}
+
+a:focus{
+    background-color: brown;
+    color: black;
+    border: 2px dotted yellowgreen;
+}
+
+a:hover{
+    font-size: 20px;
+    color: peru;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+
+a:active{
+    font-size: 20px;
+    background-color: burlywood;
+    color: gray;
+    border: 2px solid rebeccapurple;
+}
+}
+
+#encabezado{
+    background-color: beige;
+    color: rosybrown;
+    font-size: 2em;
+}
+
+#encabezado p{
+    font-size: 2em;
+}
+
+#encabezado h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px rebeccapurple;
+    font-size: 3em;
+}
+
+.contenedor-enlaces{
+    border: 2px dotted rgb(228, 110, 210);
+    background-color: bisque;
+    color: blueviolet;
+}
+
+.enlaces h2{
+    text-shadow: 2px 2px 2px purple;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.enlaces p{
+    text-align: justify;
+    padding: 5px;
+}
+
+.enlaces ul{
+    border: 2px solid black;
+}
+
+.enlaces ul li{
+    border: 0.2rem dotted blue;
+    margin: 0.8rem;
+    list-style-type: georgian;
+    list-style-position: inside;
+}
