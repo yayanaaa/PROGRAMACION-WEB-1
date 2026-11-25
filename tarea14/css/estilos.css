@@ -6,16 +6,17 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to bottom, rgb(3, 25, 54), rgb(4, 62, 189));
+  background-image: linear-gradient(to bottom, rgb(16, 48, 90), rgb(4, 62, 189));
   color: white;
 }
 
 #encabezado {
   border: 0.2rem solid pink;
   font-size: 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(76, 117, 207, 0.822);
 }
 
@@ -24,6 +25,7 @@ body {
    border-radius: 45%;
    width: 20%;
    height: 27rem;
+   display: flex;
 }
 
 .logo img {
@@ -35,28 +37,32 @@ body {
 #encabezado h1 {
   text-align: center;
   text-shadow: 0.2rem 0.2rem 0.5rem pink;
-  position: absolute;
-  top: 10rem;
-  left: 30%;
 }
 
 #navegacion ul {
   list-style-type: none;
   padding-left: 0;
-  position: absolute;
-  top: 25%;
-  right: 10%;
+  display: flex;
   border: 0.2rem solid red;
-  width: 15%;
+  width: 100%;
   text-align: center;
   font-size: 3rem;
+  gap: 1rem;
 }
 
-#elementos-posicionados {
+#contenedor-flexible {
   border: 0.2rem solid rgb(9, 22, 201);
   padding: 1rem;
   height: 200rem;
-  position: relative;
+  /* propiedaD
+  DISPLAY:FLEX vuelve a un contenedor flexible  */
+  display: flex;
+  /* flex direction: define el eje principal o main axis, en que va a trabajr flebox(row, column, row-reverse, column-reverse, column-reverse) */
+  flex-direction: row;
+  /* align-items: define del eje cruzado o cross axis con el que va a trabajar flexbox */
+  align-items:start;
+  /* justify-content: define a distrubir el espacio de los objetos flexibles a lo largo del eje principal o main axis */
+  justify-content: space-between;
 }
 #navegacion ul li {
     display: inline-block;
@@ -64,12 +70,10 @@ body {
 
 .gatito_azul {
   border: 0.2rem solid rgb(8, 5, 196);
-  width: 40rem;
-    height: 50rem;
+  width: 20rem;
+    height: 30rem;
     margin: 0.5rem;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
+  
 }
 
 .gatito_azul img {
@@ -79,12 +83,10 @@ body {
 
 .jk {
   border: 0.2rem solid rgb(6, 8, 134);
-  width: 40rem;
-  height: 50rem;
+  width: 20rem;
+  height: 30rem;
   margin: 0.5rem;
-  position: absolute;
-  top: 0rem;
-  right: 0rem;
+
   z-index: 2;
 }
 
@@ -95,12 +97,10 @@ body {
 
 .ojo{
   border: 0.2rem solid rgb(8, 2, 90);
-  width: 40rem;
-  height: 50rem;
+  width: 20rem;
+  height: 30rem;
   margin: 0.5rem;
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem;
+
 }
 
 .ojo img {
@@ -110,12 +110,10 @@ body {
 
 .abrazo {
   border: 0.2rem solid rgb(8, 1, 51);
-  width: 40rem;
-  height: 50rem;
+  width: 20rem;
+  height: 30rem;
   margin: 0.5rem;
-  position: absolute;
-  bottom: 0rem;
-  right: 0rem;
+ 
   z-index: 2;
 }
 
@@ -134,9 +132,7 @@ body {
   #encabezado h1 {
     text-align: center;
     text-shadow: 0.2rem 0.2rem 0.5rem pink;
-    position: absolute;
-    top: 10rem;
-    left: 25%;
+   
     font-size: 10rem;
   }
     
