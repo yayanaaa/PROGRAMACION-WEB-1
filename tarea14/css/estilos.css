@@ -6,7 +6,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to bottom, black, rgb(44, 0, 0));
+  background-image: linear-gradient(to bottom, rgb(3, 25, 54), rgb(4, 62, 189));
   color: white;
 }
 
@@ -16,10 +16,11 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
+  background-color: rgba(76, 117, 207, 0.822);
 }
 
 .logo {
-   border: 0.2rem solid greenyellow;
+   border: 0.2rem solid rgb(25, 4, 209);
    border-radius: 45%;
    width: 20%;
    height: 27rem;
@@ -52,7 +53,7 @@ body {
 }
 
 #elementos-posicionados {
-  border: 0.2rem solid goldenrod;
+  border: 0.2rem solid rgb(9, 22, 201);
   padding: 1rem;
   height: 200rem;
   position: relative;
@@ -62,7 +63,7 @@ body {
 }
 
 .gatito_azul {
-  border: 0.2rem solid greenyellow;
+  border: 0.2rem solid rgb(8, 5, 196);
   width: 40rem;
     height: 50rem;
     margin: 0.5rem;
@@ -77,7 +78,7 @@ body {
 }
 
 .jk {
-  border: 0.2rem solid greenyellow;
+  border: 0.2rem solid rgb(6, 8, 134);
   width: 40rem;
   height: 50rem;
   margin: 0.5rem;
@@ -93,7 +94,7 @@ body {
 }
 
 .ojo{
-  border: 0.2rem solid greenyellow;
+  border: 0.2rem solid rgb(8, 2, 90);
   width: 40rem;
   height: 50rem;
   margin: 0.5rem;
@@ -107,17 +108,18 @@ body {
   height: 100%;
 }
 
-.abarzo {
-  border: 0.2rem solid greenyellow;
+.abrazo {
+  border: 0.2rem solid rgb(8, 1, 51);
   width: 40rem;
   height: 50rem;
   margin: 0.5rem;
   position: absolute;
   bottom: 0rem;
   right: 0rem;
+  z-index: 2;
 }
 
-.abarzo img {
+.abrazo img {
   width: 100%;
   height: 100%;
 }
