@@ -1,0 +1,141 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to bottom, black, rgb(44, 0, 0));
+  color: white;
+}
+
+#encabezado {
+  border: 0.2rem solid pink;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.logo {
+   border: 0.2rem solid greenyellow;
+   border-radius: 45%;
+   width: 20%;
+   height: 27rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 45%;
+}
+
+#encabezado h1 {
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.5rem pink;
+  position: absolute;
+  top: 10rem;
+  left: 30%;
+}
+
+#navegacion ul {
+  list-style-type: none;
+  padding-left: 0;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  border: 0.2rem solid red;
+  width: 15%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#elementos-posicionados {
+  border: 0.2rem solid goldenrod;
+  padding: 1rem;
+  height: 200rem;
+  position: relative;
+}
+#navegacion ul li {
+    display: inline-block;
+}
+
+.gatito_azul {
+  border: 0.2rem solid greenyellow;
+  width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+.gatito_azul img {
+  width: 100%;
+  height: 100%;
+}
+
+.jk {
+  border: 0.2rem solid greenyellow;
+  width: 40rem;
+  height: 50rem;
+  margin: 0.5rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  z-index: 2;
+}
+
+.jk img {
+  width: 100%;
+  height: 100%;
+}
+
+.ojo{
+  border: 0.2rem solid greenyellow;
+  width: 40rem;
+  height: 50rem;
+  margin: 0.5rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+}
+
+.ojo img {
+  width: 100%;
+  height: 100%;
+}
+
+.abarzo {
+  border: 0.2rem solid greenyellow;
+  width: 40rem;
+  height: 50rem;
+  margin: 0.5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+.abarzo img {
+  width: 100%;
+  height: 100%;
+}
+/*
+ COncultas de medios
+ SIrve para deifinir los estilos a elementos HTML, según el tamaño de la pantlla de nuerstro dispositivo, ya sea computadora, tablet o celular. Gracias a esto se proporciona una herramineta que nos sirve para la creación de pag web. 
+ Si se definen varias consultas  de medios, se aplicarán los estilos de la consulta que coincida con el tamaño de la pantalla, de forma descendente, es decir, primero se aplicarán los estilos de la consulta que coincida con el tamaño de la pantalla y luego se aplicarán los estilos de las consultas que no coincidan con el tamaño de la pantalla. 
+ movil(480px), tablet(768px), laptop(1024px), desktop(1200px) y tv(1600px).
+ */
+
+ @media screen and (max-width: 1250px) {
+  #encabezado h1 {
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem pink;
+    position: absolute;
+    top: 10rem;
+    left: 25%;
+    font-size: 10rem;
+  }
+    
+ }
